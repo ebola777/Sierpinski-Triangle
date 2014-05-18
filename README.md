@@ -2,7 +2,7 @@
 
 A simple C# program to generate Sierpinski triangle.
 
-You can download binary file [here][binary].
+You can download binary file [here][binary]. (Requires .NET Framework 4)
 
 ## How to Use
 

@@ -21,17 +21,27 @@ You can click Menu: Options -> Reset to Default Settings if you mess them up.
 
 ## Examples
 
+![screenshot1][screenshot1]
+
 Modified parameters:
 
 - Generator/NumberOfLevels = 16
 - Style/IsShowZeroLines = False
 - Style/IsUseAntiAlias = True
 
+***
+
+![screenshot2][screenshot2]
+
 Modified parameters:
 
 - Generator/Mode = Bypass
 - Generator/NumberOfLevels = 5
 - Style/Visible/IsShowNumber = True
+
+***
+
+![screenshot3][screenshot3]
 
 Modified parameters:
 
@@ -42,12 +52,20 @@ Modified parameters:
 - Style/BackColor = Gray
 - Style/Visible/BorderColor = GreenYellow
 
+***
+
+![screenshot4][screenshot4]
+
 Modified parameters:
 
 - Generator/NumberOfLevels = 4
 - Style/Hidden/IsShow = True
 - Style/Hidden/IsShowNumber = True
 - Style/Visible/IsShowNumber = True
+
+***
+
+![screenshot5][screenshot5]
 
 Modified parameters:
 
@@ -67,9 +85,9 @@ Copyright (c) 2014 Shawn
 
 See the LICENSE file for license rights and limitations (MIT).
 
-[binary]: http://
-[screenshot1]: http://
-[screenshot2]: http://
-[screenshot3]: http://
-[screenshot4]: http://
-[screenshot5]: http://
+[binary]: http://github.com/ebola777/Sierpinski-Triangle/raw/master/binaries/SierpinskiTriangle.zip
+[screenshot1]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot1.jpg
+[screenshot2]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot2.jpg
+[screenshot3]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot3.jpg
+[screenshot4]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot4.jpg
+[screenshot5]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot5.jpg

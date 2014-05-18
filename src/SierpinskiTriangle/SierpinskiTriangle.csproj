@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED2B6797-1132-4AAA-9384-D8D676BAB00A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SierpinskiTriangle</RootNamespace>
+    <AssemblyName>SierpinskiTriangle</AssemblyName>
+    <TargetFrameworkVersion>v4.0.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ExtendedDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord.MachineLearning, Version=2.11.0.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Ciloci.Flee">
+      <HintPath>..\lib\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Lang\CoreLang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Control\ControlModel.cs" />
+    <Compile Include="Models\Control\Generator.cs" />
+    <Compile Include="Models\Control\Pattern.cs" />
+    <Compile Include="Models\Control\Style.cs" />
+    <Compile Include="Models\Graph\GraphModel.cs" />
+    <Compile Include="Models\Main\MainModel.cs" />
+    <Compile Include="Presenters\Base\PresenterBase.cs" />
+    <Compile Include="Presenters\Contracts\IPresenter.cs" />
+    <Compile Include="Presenters\Control\ControlPresenter.cs" />
+    <Compile Include="Presenters\Graph\Cache\CacheContent.cs" />
+    <Compile Include="Presenters\Graph\Cache\CacheManager.cs" />
+    <Compile Include="Presenters\Graph\Drawing\Base\DrawingBase.cs" />
+    <Compile Include="Presenters\Graph\Drawing\Base\PolyObjBase.cs" />
+    <Compile Include="Presenters\Graph\Drawing\Base\RegularPatternBase.cs" />
+    <Compile Include="Presenters\Graph\Drawing\Contracts\IDrawing.cs" />
+    <Compile Include="Presenters\Graph\Drawing\MetaInfo.cs" />
+    <Compile Include="Presenters\Graph\Drawing\RegularDrawing.cs" />
+    <Compile Include="Presenters\Graph\Drawing\RightAngledToLeftDrawing.cs" />
+    <Compile Include="Presenters\Graph\Drawing\RightAngledToRightDrawing.cs" />
+    <Compile Include="Presenters\Graph\Drawing\SquareDrawing.cs" />
+    <Compile Include="Presenters\Graph\Generators\Base\GeneratorBase.cs" />
+    <Compile Include="Presenters\Graph\Generators\Contracts\IGenerator.cs" />
+    <Compile Include="Presenters\Graph\Generators\GeneratorResult.cs" />
+    <Compile Include="Presenters\Graph\Generators\PascalTriangle.cs" />
+    <Compile Include="Presenters\Graph\GraphPresenter.cs" />
+    <Compile Include="Presenters\Graph\Interactive\Base\InteractiveBase.cs" />
+    <Compile Include="Presenters\Graph\Interactive\Contracts\IInteractive.cs" />
+    <Compile Include="Presenters\Graph\Interactive\RegularInteractive.cs" />
+    <Compile Include="Presenters\Graph\Strategies\Base\StrategyBase.cs" />
+    <Compile Include="Presenters\Graph\Strategies\BypassStrategy.cs" />
+    <Compile Include="Presenters\Graph\Strategies\Contracts\IStrategy.cs" />
+    <Compile Include="Presenters\Graph\Strategies\ExpressionStrategy.cs" />
+    <Compile Include="Presenters\Graph\Strategies\ModuloStrategy.cs" />
+    <Compile Include="Presenters\Main\MainPresenter.cs" />
+    <Compile Include="Storage\AppSettings.cs" />
+    <Compile Include="Storage\Settings\ControlViewSettings.cs" />
+    <Compile Include="Storage\Settings\GraphViewSettings.cs" />
+    <Compile Include="Storage\Settings\UiSettings.cs" />
+    <Compile Include="Utilities\DynamicPropertiesHelper.cs" />
+    <Compile Include="Storage\Settings\FileInfoSettings.cs" />
+    <Compile Include="Storage\Settings\MainViewSettings.cs" />
+    <Compile Include="Storage\Settings\VersionInfoSettings.cs" />
+    <Compile Include="Utilities\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ErrorHandling.cs" />
+    <Compile Include="Utilities\LocalizableProperties.cs" />
+    <Compile Include="Utilities\StyleHelper.cs" />
+    <Compile Include="Views\AboutView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AboutView.Designer.cs">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contracts\IView.cs" />
+    <Compile Include="Views\Delegates\Main\MainViewDelegates.cs" />
+    <Compile Include="Views\GraphView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GraphView.Designer.cs">
+      <DependentUpon>GraphView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Observers\Contracts\IViewObserver.cs" />
+    <Compile Include="Views\Observers\ControlViewObserver.cs" />
+    <Compile Include="Views\Observers\GraphViewObserver.cs" />
+    <Compile Include="Views\Utilities\ControlHelper.cs" />
+    <Compile Include="Utilities\ErrorCode.cs" />
+    <Compile Include="Utilities\Json.cs" />
+    <Compile Include="Utilities\FileSystemHelper.cs" />
+    <Compile Include="Storage\SettingsManager.cs" />
+    <Compile Include="Views\Contracts\IControlView.cs" />
+    <Compile Include="Views\Contracts\IGraphView.cs" />
+    <Compile Include="Views\Contracts\IMainView.cs" />
+    <Compile Include="Views\ControlView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ControlView.Designer.cs">
+      <DependentUpon>ControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Observers\MainViewObserver.cs" />
+    <Compile Include="Views\Utilities\DockPanelCustom.cs" />
+    <Compile Include="Views\Utilities\LocalizableView.cs" />
+    <Compile Include="Views\Utilities\ZedGraphHelper.cs" />
+    <Compile Include="Views\ViewFactory.cs" />
+    <EmbeddedResource Include="Lang\CoreLang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoreLang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lang\CoreLang.zh-TW.resx" />
+    <EmbeddedResource Include="Models\Control\Generator.en-US.resx">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Control\Generator.zh-TW.resx">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Control\Pattern.en-US.resx">
+      <DependentUpon>Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Control\Pattern.zh-TW.resx">
+      <DependentUpon>Pattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Control\Style.en-US.resx">
+      <DependentUpon>Style.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Control\Style.zh-TW.resx">
+      <DependentUpon>Style.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AboutView.resx">
+      <DependentUpon>AboutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ControlView.resx">
+      <DependentUpon>ControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ControlView.zh-TW.resx">
+      <DependentUpon>ControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraphView.resx">
+      <DependentUpon>GraphView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GraphView.zh-TW.resx">
+      <DependentUpon>GraphView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\MainView.zh-TW.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

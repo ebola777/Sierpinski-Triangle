@@ -10,13 +10,14 @@ Click "Update" to refresh the graphics.
 
 ### Navigation
 
-Move - Middle-click
-Zoom - Mouse wheel or press left-click then drag
-Save image - Right-click
+- Move - Middle-click
+- Zoom - Mouse wheel or press left-click then drag
+- Save image - Right-click
 
 ### Options
 
 All options are in the "Control" panel.
+
 You can click Menu: Options -> Reset to Default Settings if you mess them up.
 
 ## Examples

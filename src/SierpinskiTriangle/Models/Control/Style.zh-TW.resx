@@ -132,7 +132,7 @@
   <data name="n_Visible" xml:space="preserve">
     <value>顯示</value>
   </data>
-  <data name="n_IsInversed" xml:space="preserve">
+  <data name="n_IsInverted" xml:space="preserve">
     <value>反轉</value>
   </data>
   <data name="d_Hidden" xml:space="preserve">
@@ -141,7 +141,7 @@
   <data name="d_Visible" xml:space="preserve">
     <value>顯示的樣式</value>
   </data>
-  <data name="d_IsInversed" xml:space="preserve">
+  <data name="d_IsInverted" xml:space="preserve">
     <value>交換顯示和隱藏的風格。</value>
   </data>
   <data name="d_IsResetScale" xml:space="preserve">

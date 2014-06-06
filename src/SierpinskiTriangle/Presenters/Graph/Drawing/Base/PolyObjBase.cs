@@ -7,7 +7,7 @@
 
     using ZedGraph;
 
-    public abstract class PolyObjBase<TVal> : RegularPatternBase<TVal, PolyObj>
+    public abstract class PolyObjBase<TVal> : DrawingBase<TVal, PolyObj>
     {
         #region Constructors and Destructors
 

@@ -8,7 +8,7 @@
 
     using ZedGraph;
 
-    public class RightAngledToRightDrawing : PolyObjBase<BigInteger>
+    public class RightAngledToRightDrawing : RightAngledPatternBase<BigInteger>
     {
         #region Constructors and Destructors
 

@@ -36,9 +36,9 @@
         public Hidden Hidden { get; set; }
 
         [DefaultValue(false)]
-        [Name(typeof(Style), "IsInversed")]
-        [Desc(typeof(Style), "IsInversed")]
-        public bool IsInversed { get; set; }
+        [Name(typeof(Style), "IsInverted")]
+        [Desc(typeof(Style), "IsInverted")]
+        public bool IsInverted { get; set; }
 
         [DefaultValue(true)]
         [Name(typeof(Style), "IsResetScale")]

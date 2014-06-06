@@ -8,7 +8,7 @@
 
     using ZedGraph;
 
-    public class SquareDrawing : PolyObjBase<BigInteger>
+    public class SquareDrawing : RegularPatternBase<BigInteger>
     {
         #region Constructors and Destructors
 

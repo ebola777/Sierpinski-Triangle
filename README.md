@@ -87,8 +87,8 @@ Copyright (c) 2014 Shawn
 See the LICENSE file for license rights and limitations (MIT).
 
 [binary]: http://github.com/ebola777/Sierpinski-Triangle/raw/master/binaries/SierpinskiTriangle.zip
-[screenshot1]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot1.jpg
-[screenshot2]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot2.jpg
-[screenshot3]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot3.jpg
-[screenshot4]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot4.jpg
-[screenshot5]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/docs/screenshot5.jpg
+[screenshot1]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/doc/screenshot1.jpg
+[screenshot2]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/doc/screenshot2.jpg
+[screenshot3]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/doc/screenshot3.jpg
+[screenshot4]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/doc/screenshot4.jpg
+[screenshot5]: http://raw.githubusercontent.com/ebola777/Sierpinski-Triangle/master/doc/screenshot5.jpg

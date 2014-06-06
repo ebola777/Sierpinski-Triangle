@@ -8,7 +8,7 @@
 
     using ZedGraph;
 
-    public class RegularDrawing : PolyObjBase<BigInteger>
+    public class RegularDrawing : RegularPatternBase<BigInteger>
     {
         #region Constructors and Destructors
 

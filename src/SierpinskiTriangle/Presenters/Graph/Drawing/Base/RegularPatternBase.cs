@@ -5,8 +5,7 @@
 
     using ZedGraph;
 
-    public abstract class RegularPatternBase<TVal, TObj> : DrawingBase<TVal, TObj>
-        where TObj : GraphObj
+    public abstract class RegularPatternBase<TVal> : PolyObjBase<TVal>
     {
         #region Constructors and Destructors
 
@@ -26,17 +25,6 @@
             this.OffsetNewLine = new PointF(
                 (-1) * frameSize.Width / 2 * distanceRatio.Width,
                 frameSize.Height * distanceRatio.Height);
-        }
-
-        protected override void SaveScreenRectBeginLoop(PointF lastPt)
-        {
-            // do nothing
-        }
-
-        protected override void SaveScreenRectEndLoop(PointF lastPt)
-        {
-            this.ScreenRect[1].X = lastPt.X;
-            this.ScreenRect[1].Y = lastPt.Y;
         }
 
         protected override void SaveScreenRectFinal()

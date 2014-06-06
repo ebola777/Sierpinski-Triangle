@@ -102,6 +102,7 @@
     <Compile Include="Presenters\Graph\Drawing\Base\DrawingBase.cs" />
     <Compile Include="Presenters\Graph\Drawing\Base\PolyObjBase.cs" />
     <Compile Include="Presenters\Graph\Drawing\Base\RegularPatternBase.cs" />
+    <Compile Include="Presenters\Graph\Drawing\Base\RightAngledPatternBase.cs" />
     <Compile Include="Presenters\Graph\Drawing\Contracts\IDrawing.cs" />
     <Compile Include="Presenters\Graph\Drawing\MetaInfo.cs" />
     <Compile Include="Presenters\Graph\Drawing\RegularDrawing.cs" />

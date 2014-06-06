@@ -80,9 +80,6 @@
             {
                 int col = 0;
 
-                // store to screen rectangle
-                this.SaveScreenRectBeginLoop(lastPt);
-
                 // even line
                 for (; col <= line / 2; ++col)
                 {
@@ -170,7 +167,7 @@
             bool toAdd = true;
 
             // set pattern
-            if (styleSettings.IsInversed)
+            if (styleSettings.IsInverted)
             {
                 vis = !vis;
             }
@@ -297,9 +294,11 @@
             return lastPt;
         }
 
-        protected abstract void SaveScreenRectBeginLoop(PointF lastPt);
-
-        protected abstract void SaveScreenRectEndLoop(PointF lastPt);
+        protected void SaveScreenRectEndLoop(PointF lastPt)
+        {
+            this.ScreenRect[1].X = lastPt.X;
+            this.ScreenRect[1].Y = lastPt.Y;
+        }
 
         protected abstract void SaveScreenRectFinal();
 

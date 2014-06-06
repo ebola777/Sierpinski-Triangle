@@ -126,8 +126,8 @@
   <data name="d_Hidden" xml:space="preserve">
     <value>Hidden style</value>
   </data>
-  <data name="d_IsInversed" xml:space="preserve">
-    <value>Exchange visible and hidden style.</value>
+  <data name="d_IsInverted" xml:space="preserve">
+    <value>Invert visible and hidden style.</value>
   </data>
   <data name="d_IsResetScale" xml:space="preserve">
     <value>Reset scale every time the graphics updates.</value>
@@ -168,8 +168,8 @@
   <data name="n_Hidden" xml:space="preserve">
     <value>Hidden</value>
   </data>
-  <data name="n_IsInversed" xml:space="preserve">
-    <value>IsInversed</value>
+  <data name="n_IsInverted" xml:space="preserve">
+    <value>IsInverted</value>
   </data>
   <data name="n_IsResetScale" xml:space="preserve">
     <value>IsResetScale</value>
